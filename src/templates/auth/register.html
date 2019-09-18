@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<form id="Form" method="POST">{% csrf_token %}
+
+    {{ form }}
+    <button class="btn btn-default" name="submit" type="submit">Sign Up</button>
+
+</form>
